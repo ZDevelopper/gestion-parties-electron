@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Liste d'utilisateurs</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <aside
+        class="flex w-72 flex-col space-y-2 border-r-2 border-gray-200 bg-white p-2"
+        style="height: 90.5vh"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600"
+        >
+          <span>Exporter les données du jour</span>
+        </a>
+
+        <a
+          href="games.html"
+          class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600"
+        >
+          <span>Toutes les parties</span>
+        </a>
+      </aside>
+      <div class="container mx-auto my-8">
+        <table class="table-auto">
+          <thead>
+            <tr >
+              <th class="px-4 py-2">Titre</th>
+              <th class="px-4 py-2">Description</th>
+              <th class="px-4 py-2">Heure</th>
+              <th class="px-4 py-2">Salle</th>
+              <th class="px-4 py-2">Stopper la partie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="game1" class="game pending">
+              <td class="border px-4 py-2">Le couloir infernal</td>
+              <td class="border px-4 py-2">Essayez de ressortir en un seul morceau ! Le couloir infernal : Dans la peau d’un archéologue, saurez-vous déjouer les pièges, éviter les morsures …</td>
+              <td class="border px-4 py-2">9:30</td>
+              <td class="border px-4 py-2">A1</td>
+              <td class="border px-4 py-2"><button id="btnStop1" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Stop</button></td>
+            </tr>
+            <tr id="game2" class="game pending">
+              <td class="border px-4 py-2">Le couloir infernal</td>
+              <td class="border px-4 py-2">Essayez de ressortir en un seul morceau ! Le couloir infernal : Dans la peau d’un archéologue, saurez-vous déjouer les pièges, éviter les morsures …</td>
+              <td class="border px-4 py-2">9:30</td>
+              <td class="border px-4 py-2">A2</td>
+              <td class="border px-4 py-2"><button id="btnStop2" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Stop</button></td>
+
+            </tr>
+            <tr id="game3" class="game pending">
+              <td class="border px-4 py-2">Mutinerie sur le Black Pearl</td>
+              <td class="border px-4 py-2">Bon vieux Jack ! Mutinerie Black Pearl : A bord du Black Pearl, quelques membres de l’équipage se mutinent contre la dernière décision du capitaine …</td>
+              <td class="border px-4 py-2">10:30</td>
+              <td class="border px-4 py-2">A1</td>
+              <td class="border px-4 py-2"><button id="btnStop3" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Stop</button></td>
+
+            </tr>
+            <tr id="game4" class="game pending">
+              <td class="border px-4 py-2">Le commencement
+              </td>
+              <td class="border px-4 py-2">Agents F.S.U, Voici votre mission. Fin des temps – Le Commencement : Un chercheur du nom de Schrader crée une mutation d’un gaz mortel dénommé …</td>
+              <td class="border px-4 py-2">10:00</td>
+              <td class="border px-4 py-2">A3</td>
+              <td class="border px-4 py-2"><button id="btnStop4" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Stop</button></td>
+
+            </tr>
+            <tr id="game5" class="game pending">
+              <td class="border px-4 py-2">Le couloir infernal</td>
+              <td class="border px-4 py-2">Essayez de ressortir en un seul morceau ! Le couloir infernal : Dans la peau d’un archéologue, saurez-vous déjouer les pièges, éviter les morsures …</td>
+              <td class="border px-4 py-2">10:30</td>
+              <td class="border px-4 py-2">A1</td>
+              <td class="border px-4 py-2"><button id="btnStop5" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Stop</button></td>
+
+            </tr>
+            <tr id="game6" class="game pending">
+              <td class="border px-4 py-2">Mutinerie sur le Black Pearl</td>
+              <td class="border px-4 py-2">Bon vieux Jack ! Mutinerie Black Pearl : A bord du Black Pearl, quelques membres de l’équipage se mutinent contre la dernière décision du capitaine …</td>
+              <td class="border px-4 py-2">14:30</td>
+              <td class="border px-4 py-2">A1</td>
+              <td class="border px-4 py-2"><button id="btnStop6" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Stop</button></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

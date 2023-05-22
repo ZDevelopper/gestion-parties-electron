@@ -1,0 +1,20 @@
+{
+  "name": "gestion-parties",
+  "version": "1.0.0",
+  "description": "Gestionnaire de parties d'un escape game",
+  "main": "main.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/style.css -o ./dist/output.css --watch",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julien Baron",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "electron": "^24.3.1",
+    "postcss": "^8.4.23",
+    "postcss-loader": "^7.3.0",
+    "tailwindcss": "^2.2.19"
+  }
+}

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.stopped {
+  background-color: #ff0000;
+}
+
+.pending {
+    background-color: #ffff00;
+}
+
+.btnStopped {
+    background-color: #ff0000;
+}
+
+.btnPending {
+    background-color: #ffff00;
+}
